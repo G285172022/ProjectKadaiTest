@@ -149,8 +149,6 @@ function showSearchResult() {
             colgroup.insertAdjacentElement('beforeend', colSpan);
             table.insertAdjacentElement('beforeend', colgroup);
 
-            let tbody = document.createElement('tbody');
-
             let tr1 = document.createElement('tr');
             tr1.classList.add('top');
             let td11 = document.createElement('td');
@@ -255,8 +253,6 @@ function showSearchResult() {
             colgroup.insertAdjacentElement('beforeend', colClass);
             colgroup.insertAdjacentElement('beforeend', colSpan);
             table.insertAdjacentElement('beforeend', colgroup);
-
-            let tbody = document.createElement('tbody');
 
             let tr1 = document.createElement('tr');
             tr1.classList.add('top');
