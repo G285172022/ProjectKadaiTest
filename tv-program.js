@@ -147,7 +147,7 @@ function showSearchResult() {
             colSpan.span = '7';
             colgroup.insertAdjacentElement('beforeend', colClass);
             colgroup.insertAdjacentElement('beforeend', colSpan);
-            tbody.insertAdjacentElement('beforeend', colgroup);
+            table.insertAdjacentElement('beforeend', colgroup);
 
             let tbody = document.createElement('tbody');
 
@@ -163,7 +163,7 @@ function showSearchResult() {
             td12.textContent = year + '年' + month + '月' + day + '日 ' + time;
             tr1.insertAdjacentElement('beforeend', td11);
             tr1.insertAdjacentElement('beforeend', td12);
-            tbody.insertAdjacentElement('beforeend', tr1);
+            table.insertAdjacentElement('beforeend', tr1);
 
             let tr2 = document.createElement('tr');
             let td21 = document.createElement('td');
@@ -176,7 +176,7 @@ function showSearchResult() {
             td22.textContent = year + '年' + month + '月' + day + '日 ' + time;
             tr2.insertAdjacentElement('beforeend', td21);
             tr2.insertAdjacentElement('beforeend', td22);
-            tbody.insertAdjacentElement('beforeend', tr2);
+            table.insertAdjacentElement('beforeend', tr2);
 
             let tr3 = document.createElement('tr');
             let td31 = document.createElement('td');
@@ -185,7 +185,7 @@ function showSearchResult() {
             td32.textContent = tvPrgObj.service.name;
             tr3.insertAdjacentElement('beforeend', td31);
             tr3.insertAdjacentElement('beforeend', td32);
-            tbody.insertAdjacentElement('beforeend', tr3);
+            table.insertAdjacentElement('beforeend', tr3);
 
             if (tvPrgObj.title !== '') {
                 let tr4 = document.createElement('tr');
@@ -195,7 +195,7 @@ function showSearchResult() {
                 td42.textContent = tvPrgObj.title;
                 tr4.insertAdjacentElement('beforeend', td41);
                 tr4.insertAdjacentElement('beforeend', td42);
-                tbody.insertAdjacentElement('beforeend', tr4);
+                table.insertAdjacentElement('beforeend', tr4);
             }
 
             if (tvPrgObj.subtitle !== '') {
@@ -206,7 +206,7 @@ function showSearchResult() {
                 td52.textContent = tvPrgObj.subtitle;
                 tr5.insertAdjacentElement('beforeend', td51);
                 tr5.insertAdjacentElement('beforeend', td52);
-                tbody.insertAdjacentElement('beforeend', tr5);
+                table.insertAdjacentElement('beforeend', tr5);
             }
 
             if (tvPrgObj.content !== '') {
@@ -217,7 +217,7 @@ function showSearchResult() {
                 td62.textContent = tvPrgObj.content;
                 tr6.insertAdjacentElement('beforeend', td61);
                 tr6.insertAdjacentElement('beforeend', td62);
-                tbody.insertAdjacentElement('beforeend', tr6);
+                table.insertAdjacentElement('beforeend', tr6);
             }
 
             if (tvPrgObj.act !== '') {
@@ -228,9 +228,9 @@ function showSearchResult() {
                 td72.textContent = tvPrgObj.act;
                 tr7.insertAdjacentElement('beforeend', td71);
                 tr7.insertAdjacentElement('beforeend', td72);
-                tbody.insertAdjacentElement('beforeend', tr7);
+                table.insertAdjacentElement('beforeend', tr7);
             }
-            table.insertAdjacentElement('beforeend', tbody);
+
             result.insertAdjacentElement('beforeend', table);
 
             i++;
@@ -254,7 +254,7 @@ function showSearchResult() {
             colSpan.span = '7';
             colgroup.insertAdjacentElement('beforeend', colClass);
             colgroup.insertAdjacentElement('beforeend', colSpan);
-            tbody.insertAdjacentElement('beforeend', colgroup);
+            table.insertAdjacentElement('beforeend', colgroup);
 
             let tbody = document.createElement('tbody');
 
@@ -270,7 +270,7 @@ function showSearchResult() {
             td12.textContent = year + '年' + month + '月' + day + '日 ' + time;
             tr1.insertAdjacentElement('beforeend', td11);
             tr1.insertAdjacentElement('beforeend', td12);
-            tbody.insertAdjacentElement('beforeend', tr1);
+            table.insertAdjacentElement('beforeend', tr1);
 
             let tr2 = document.createElement('tr');
             let td21 = document.createElement('td');
@@ -283,7 +283,7 @@ function showSearchResult() {
             td22.textContent = year + '年' + month + '月' + day + '日 ' + time;
             tr2.insertAdjacentElement('beforeend', td21);
             tr2.insertAdjacentElement('beforeend', td22);
-            tbody.insertAdjacentElement('beforeend', tr2);
+            table.insertAdjacentElement('beforeend', tr2);
 
             let tr3 = document.createElement('tr');
             let td31 = document.createElement('td');
@@ -292,7 +292,7 @@ function showSearchResult() {
             td32.textContent = tvPrgObj.service.name;
             tr3.insertAdjacentElement('beforeend', td31);
             tr3.insertAdjacentElement('beforeend', td32);
-            tbody.insertAdjacentElement('beforeend', tr3);
+            table.insertAdjacentElement('beforeend', tr3);
 
             if (tvPrgObj.title !== '') {
                 let tr4 = document.createElement('tr');
@@ -302,7 +302,7 @@ function showSearchResult() {
                 td42.textContent = tvPrgObj.title;
                 tr4.insertAdjacentElement('beforeend', td41);
                 tr4.insertAdjacentElement('beforeend', td42);
-                tbody.insertAdjacentElement('beforeend', tr4);
+                table.insertAdjacentElement('beforeend', tr4);
             }
 
             if (tvPrgObj.subtitle !== '') {
@@ -313,7 +313,7 @@ function showSearchResult() {
                 td52.textContent = tvPrgObj.subtitle;
                 tr5.insertAdjacentElement('beforeend', td51);
                 tr5.insertAdjacentElement('beforeend', td52);
-                tbody.insertAdjacentElement('beforeend', tr5);
+                table.insertAdjacentElement('beforeend', tr5);
             }
 
             if (tvPrgObj.content !== '') {
@@ -324,7 +324,7 @@ function showSearchResult() {
                 td62.textContent = tvPrgObj.content;
                 tr6.insertAdjacentElement('beforeend', td61);
                 tr6.insertAdjacentElement('beforeend', td62);
-                tbody.insertAdjacentElement('beforeend', tr6);
+                table.insertAdjacentElement('beforeend', tr6);
             }
 
             if (tvPrgObj.act !== '') {
@@ -335,10 +335,9 @@ function showSearchResult() {
                 td72.textContent = tvPrgObj.act;
                 tr7.insertAdjacentElement('beforeend', td71);
                 tr7.insertAdjacentElement('beforeend', td72);
-                tbody.insertAdjacentElement('beforeend', tr7);
+                table.insertAdjacentElement('beforeend', tr7);
             }
 
-            table.insertAdjacentElement('beforeend', tbody);
             result.insertAdjacentElement('beforeend', table);
 
             i++;
